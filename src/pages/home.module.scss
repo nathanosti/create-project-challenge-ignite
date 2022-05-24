@@ -1,1 +1,49 @@
-// TODO
+.posts {
+    margin-top: 2rem;
+
+     > a {
+        display: block;
+    }
+    a + a {
+        margin-top: 3rem !important
+    }
+}
+
+.post {
+    margin: 2rem 0;
+
+    strong {
+        font-size: 1.5rem;
+        color: var(--heading);
+        font-weight: 700;
+    }
+    p {
+        margin-top: 0.5rem;
+        font-size: 1.125rem;
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin-top: 1rem;
+
+        & li {
+            font-size: 1rem;
+            & svg {
+                margin-right: 0.5rem;
+            }
+    
+            & + li {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
+
+
+.loadMore {
+    border: 0;
+    background-color: transparent;
+    color : var(--highlight);
+    margin-top: 1.5rem;
+}

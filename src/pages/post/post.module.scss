@@ -1,1 +1,50 @@
-// TODO
+.post { 
+    h1 { 
+        font-size: 2.5rem;
+        color : var(--heading);
+        margin: 2rem 0;
+    }
+
+    p,span,a,ul {
+        font-size: 1.125rem;
+        line-height: 1.0;
+        margin: 1.5rem 0;
+    }
+
+    strong { 
+        color: var(--body);
+        font-weight: 700;
+    }
+}
+
+
+.banner {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    left: 30%;
+}
+.header {
+    strong {
+        color: var(--heading);
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    ul {
+        margin: 1rem 0 4rem;
+        display: flex;
+        list-style: none;
+
+        & li {
+            font-size: 1rem;
+            & svg {
+                margin-right: 0.5rem;
+            }
+    
+            & + li {
+                margin-left: 1rem;
+            }
+        }
+    }
+}
